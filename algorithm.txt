@@ -1,0 +1,32 @@
+// Honor Pledge: I pledge that I have neither given nor received any help on this assignment
+
+Nathalie Kroeker
+CSCI 24000
+Assignment 3 Algorithm
+
+Goal: The goal of this program is to loop through a function that randomly picks whether one of two players will score a basket. If one of the players misses a shot the other player hit, the missing player gains a letter. This will continue until one player spells "HORSE", at which point they are declared the loser.
+
+Input: Y/N at the end of a simulation
+Output: Which player - if they hit or miss - the resulting score
+        The winner of the match
+
+Requirements:
+  - A Player class which stores the score for a player in a character array.
+  - A recursive function which creates a random number and uses it to determine a player's shot
+
+Feedback:
+  - Print to console for each round the Player, the result of their shot, and the score (if added letter)
+  - Looping mechanism to end the program
+    - Dictated by a user's 'Y/N' response
+
+Step-by-Step Details:
+1. Greets user
+2. Chooses a number 0 or 1
+3. Pass that number into a function that checks if it's a hit or miss
+4. Print that Player's shot
+5. Repeat the process for Player 2
+6. If one player hits and the other misses, the Player who missed gains a letter (H, O, R, S, E).
+7. If both hit or both miss, the round continues with no new letters.
+8. Check if the the character array for either player is equal to ['H', 'O', 'R', 'S', 'E']
+9. When the above statement occurs, the game ends and it will print which player won
+10. Ask if the player wants to repeat the game by asking for a Y/N response
