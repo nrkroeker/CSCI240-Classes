@@ -17,7 +17,7 @@ Requirements:
 Feedback:
   - Print to console for each round the Player, the result of their shot, and the score (if added letter)
   - Looping mechanism to end the program
-    - Dictated by a user's 'Y/N' response
+    - Dictated by the user's 'Y/N' response
 
 Step-by-Step Details:
 1. Greets user
