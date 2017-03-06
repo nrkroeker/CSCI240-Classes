@@ -6,15 +6,17 @@ class Player {
 
   private:
     int shotNum;
-    char[] letterScore;
+    std::string letterScore;
 
   public:
-    //Constructor
+    //Constructors
     Player();
+
     //Deconstructor
     ~Player()
 
     //Class methods
     void shoot();
+    void onWin();
 
 #endif
