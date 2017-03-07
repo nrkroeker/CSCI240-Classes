@@ -8,8 +8,8 @@ Player.o: Player.cpp
 	g++ -c Player.cpp
 
 clean:
-	rm *.o
-	rm Game
+	rm -f *.o
+	rm -f playGame
 
-run: 
+run:
 	./playGame
