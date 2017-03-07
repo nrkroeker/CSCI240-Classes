@@ -23,6 +23,5 @@ class Player {
 
     //Class methods
     void shoot();
-    void onWin();
 };
 #endif

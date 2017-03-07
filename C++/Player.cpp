@@ -24,7 +24,3 @@ void Player::shoot() {
 	}
 	
 }
-
-void Player::onWin() {
-  
-}

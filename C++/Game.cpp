@@ -28,19 +28,20 @@ int main() {
 			}
 			} while (firstPlayer->score != "HORSE" && secondPlayer->score != "HORSE");
 		
-		/*if(firstPlayer->score == "HORSE") {
-			firstPlayer->onWin();
+		if(firstPlayer->score == "HORSE") {
+			std::cout << "\n\nPlayer two wins!\n\n" << std::endl;
 		}
 		else if(secondPlayer->score == "HORSE") {
-			secondPlayer->onWin();
+			std::cout << "\n\nPlayer one wins!\n\n" << std::endl;
 		}
 		else {
 			std::cout << "Something broke when checking who won." <<std::endl;
-		}*/
+		}
 		delete firstPlayer;
 		delete secondPlayer;
 		std::cout << "Would you like to play again? Y/N > " << std::flush;
 		std::cin >> repeat;
+		repeat = toupper(repeat);
 	} while (repeat == 'Y');
 
 	return 0;
