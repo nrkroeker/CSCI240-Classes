@@ -1,22 +1,22 @@
 //If undefined, create header
 #ifndef PLAYER_H
 #define PLAYER_H
+#include <string>
 
 class Player {
 
-  private:
-    int shotNum;
-    std::string letterScore;
-
   public:
+    int shotNum;
+    std::string score;
+
     //Constructors
     Player();
 
     //Deconstructor
-    ~Player()
+    ~Player();
 
     //Class methods
     void shoot();
     void onWin();
-
+};
 #endif

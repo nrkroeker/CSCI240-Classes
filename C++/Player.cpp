@@ -1,5 +1,6 @@
 #include "Player.h"
 #include <iostream>
+#include <string>
 
 Player::Player() {
   this->shotNum = 0;
@@ -12,11 +13,8 @@ Player::~Player() {
 
 void Player::shoot() {
 
-
 }
 
 void Player::onWin() {
-
-
   
 }
