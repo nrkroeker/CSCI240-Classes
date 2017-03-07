@@ -1,3 +1,5 @@
+// Honor Pledge: I pledge that I have neither given nor received any help on this assignment
+
 //If undefined, create header
 #ifndef PLAYER_H
 #define PLAYER_H
