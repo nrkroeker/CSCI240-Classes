@@ -4,6 +4,10 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 #include <string>
+#include <time.h>
+#include <stdlib.h>
+#include <iostream>
+
 
 class Player {
 
