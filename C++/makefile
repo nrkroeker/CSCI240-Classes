@@ -1,5 +1,5 @@
-Game: Player.o Game.o
-	g++ Player.o Game.o -o Game
+playGame: Player.o Game.o
+	g++ Player.o Game.o -o playGame
 
 Game.o: Game.cpp
 	g++ -c Game.cpp
@@ -12,4 +12,4 @@ clean:
 	rm Game
 
 run: 
-	./Game
+	./playGame
