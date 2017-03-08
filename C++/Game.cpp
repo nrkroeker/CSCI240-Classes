@@ -46,8 +46,14 @@ int main() {
 		delete secondPlayer;
 
 		std::cout << "Would you like to play again? Y/N > " << std::flush;
-		std::cin >> repeat;
-		repeat = toupper(repeat);
+
+		do {
+			std::cin >> repeat;
+			repeat = toupper(repeat);
+			if(repeat != 'Y' && repeat != 'N') {
+				std::cout << "Please use Y/N format >" << std::endl;
+			}
+		} while (repeat != 'Y' && repeat != 'N');
 	} while (repeat == 'Y');
 
 	return 0;
