@@ -31,12 +31,10 @@ public class Game {
               firstPlayer.score += scoreWord.charAt(firstCounter);
               System.out.println("\tFirst player adds " + scoreWord.charAt(firstCounter));
               firstCounter += 1;
-              System.out.println(firstPlayer.score);
           } else if(secondPlayer.shotNum > 49 && firstPlayer.shotNum <= 49) {
               secondPlayer.score += scoreWord.charAt(secondCounter);
               System.out.println("\tSecond player adds " + scoreWord.charAt(secondCounter));
               secondCounter += 1;
-              System.out.println(secondPlayer.score);
           }
         // Ends the loop when one person loses
       } while (!firstPlayer.score.equals("HORSE") && !secondPlayer.score.equals("HORSE"));
