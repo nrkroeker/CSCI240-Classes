@@ -6,16 +6,17 @@ public class Player {
   public String score;
 
   Player() {
+    score = "";
 
   }
 
   public void shoot() {
       shotNum = (int)(Math.random() * 100);
-    if(shotNum <= 4) {
-      System.out.println("Hit shot!");
+    if(shotNum <= 49) {
+      System.out.println("\t\tHit shot!");
     }
-    else if(shotNum > 4) {
-      System.out.println("Missed shot!");
+    else if(shotNum > 49) {
+      System.out.println("\t\tMissed shot!");
     }
   }
 

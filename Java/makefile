@@ -3,4 +3,4 @@ playGame:
 clean:
 	rm -f *.class
 run:
-	java playGame
+	java Game

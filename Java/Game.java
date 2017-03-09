@@ -15,6 +15,8 @@ public class Game {
         // Create random seed and objects
         Player firstPlayer = new Player();
         Player secondPlayer = new Player();
+        int firstCounter = 0;
+        int secondCounter = 0;
 
         // Loop for each shot
         do {
@@ -25,24 +27,25 @@ public class Game {
           secondPlayer.shoot();
 
           // Check if they add letter and who
-          if(firstPlayer.shotNum > 4 && secondPlayer.shotNum <= 4) {
-              int firstCounter = firstPlayer.score.length();
+          if(firstPlayer.shotNum > 49 && secondPlayer.shotNum <= 49) {
               firstPlayer.score += scoreWord.charAt(firstCounter);
               System.out.println("\tFirst player adds " + scoreWord.charAt(firstCounter));
-          } else if(secondPlayer.shotNum > 4 && firstPlayer.shotNum <=4) {
-              int secondCounter = secondPlayer.score.length();
+              firstCounter += 1;
+              System.out.println(firstPlayer.score);
+          } else if(secondPlayer.shotNum > 49 && firstPlayer.shotNum <= 49) {
               secondPlayer.score += scoreWord.charAt(secondCounter);
               System.out.println("\tSecond player adds " + scoreWord.charAt(secondCounter));
+              secondCounter += 1;
+              System.out.println(secondPlayer.score);
           }
-
         // Ends the loop when one person loses
-        } while (firstPlayer.score != "HORSE" && secondPlayer.score != "HORSE");
+      } while (!firstPlayer.score.equals("HORSE") && !secondPlayer.score.equals("HORSE"));
 
         // Check who lost
-        if(firstPlayer.score == "HORSE") {
+        if(firstPlayer.score.equals("HORSE")) {
           System.out.println("\n\nPlayer two wins!\n\n");
         }
-        else if(secondPlayer.score == "HORSE") {
+        else if(secondPlayer.score.equals("HORSE")) {
           System.out.println("\n\nPlayer one wins!\n\n");
         }
         else {
