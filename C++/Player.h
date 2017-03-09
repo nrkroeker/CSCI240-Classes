@@ -1,6 +1,6 @@
 // Honor Pledge: I pledge that I have neither given nor received any help on this assignment
 
-//If undefined, create header
+// If undefined, define player
 #ifndef PLAYER_H
 #define PLAYER_H
 #include <string>
@@ -8,9 +8,10 @@
 #include <stdlib.h>
 #include <iostream>
 
-
+// Class declaration
 class Player {
 
+  // Public variables
   public:
     int shotNum;
     std::string score;

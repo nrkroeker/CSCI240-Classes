@@ -5,6 +5,7 @@
 #include <cstdlib>
 #include <iostream>
 
+// Constructor
 Player::Player() {
   this->shotNum = 0;
   this->score = "";
@@ -14,6 +15,7 @@ Player::~Player() {
   //deleteeeee the object
 }
 
+// Generates random number and determines shot
 void Player::shoot() {
 	this->shotNum = std::rand()%10;
 	if(shotNum <= 4) {
@@ -22,5 +24,5 @@ void Player::shoot() {
 	else if(shotNum > 4) {
 		std::cout << "Missed shot!" << std::endl;
 	}
-	
+
 }
